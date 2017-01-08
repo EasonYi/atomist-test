@@ -39,3 +39,16 @@ generator:
     - "root_package": "com.eason"
     - "service_class_name": "AtomistTest"
 
+---
+kind: "operation"
+client: "atomist"
+editor:
+  name: "atomist-rugs.spring-cloud-editors.AddHystrix"
+  group: "atomist-rugs"
+  artifact: "spring-cloud-editors"
+  version: "0.2.0"
+  origin:
+    repo: "atomist-rugs/spring-cloud-editors.git"
+    branch: "b263095528641f17324548f57898c24dd0171b50"
+    sha: "b263095"
+
