@@ -1,0 +1,41 @@
+---
+kind: "operation"
+client: "rug-cli 0.16.6"
+editor:
+  name: "atomist-rugs.travis-editors.EnableTravisForRugArchiveDSL"
+  group: "atomist-rugs"
+  artifact: "travis-editors"
+  version: "0.4.0"
+  origin:
+    repo: "atomist-rugs/travis-editors.git"
+    branch: "master"
+    sha: "ffa56d6"
+  parameters:
+    - "repo_slug": "atomist-rugs/spring-boot-rest-service"
+    - "org": ".org"
+    - "github_token": "4**************************************b"
+    - "maven_base_url": "https://atomist.jfrog.io/atomist"
+    - "maven_user": "t************h"
+    - "maven_token": "A***********************************************************************i"
+
+---
+kind: "operation"
+client: "atomist 1.2"
+generator:
+  name: "NewSpringBootRestService"
+  group: "atomist-rugs"
+  artifact: "spring-boot-rest-service"
+  version: "0.5.0"
+  origin:
+    repo: "atomist-rugs/spring-boot-rest-service.git"
+    branch: "0df40ec6b03a6aa6e707438e066524ff6a9cd720"
+    sha: "0df40ec"
+  parameters:
+    - "project_name": "atomist-test"
+    - "artifact_id": "spring-boot-rest"
+    - "group_id": "com.eason.test"
+    - "version": "0.1.0-SNAPSHOT"
+    - "description": "My new project based on Spring Boot Rest that created by Atomist Button"
+    - "root_package": "com.eason"
+    - "service_class_name": "AtomistTest"
+
